@@ -78,7 +78,7 @@ class RatingsSync(object):
 
         try:
             api.login(self.email, self.password)
-            xml_file = open('self.xml_file', 'r').read()
+            xml_file = open(self.xml_file, 'r').read()
 
             print "Parsing songs from iTunes XML file..."
             itunes_song_list = self.__get_itunes_song_list(xml_file)
