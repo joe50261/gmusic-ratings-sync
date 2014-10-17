@@ -123,7 +123,7 @@ class RatingsSync(object):
         """
 
         print "\tLoading XML file... (this may take a minute or two)"
-        xml = BeautifulSoup(xml_file)
+        xml = BeautifulSoup(xml_file, ["lxml", "xml"])
         print "\tXML file loaded"
 
         print "\tExtracting songs..."
