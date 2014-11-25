@@ -228,7 +228,7 @@ class RatingsSync(object):
         print "\tTotal iTunes songs: ", len(itunes_songs)
         if only_no_rating:
             print "\tGetting songs with no rating in Google Music..."
-            gmusic_songs = [song for song in gmusic_songs if song['rating'] == 0]
+            gmusic_songs = [song for song in gmusic_songs if song['rating'] == u'0']
             print "\tGoogle Music songs with no rating: ", len(gmusic_songs)
 
         print "\tIntersecting..."
